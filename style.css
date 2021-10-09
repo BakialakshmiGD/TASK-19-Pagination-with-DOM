@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI',sans-serif; 
+    font-weight:bold;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    padding:10px;
+    background-color:rgb(23, 58, 78);
+}
+.pagination ul{
+display:flex;
+background-color: aliceblue;
+padding:10px;
+border-radius:50px;
+}
+.pagination ul li  {
+    color:lightskyblue;
+     list-style: none;
+     line-height: 45px;
+     text-align: center;
+     font-size:18px;
+     cursor: pointer;
+     border-radius: 50px;
+     transition: 0.4s ;
+}
+.pagination ul li.number-active{
+    height:45px;
+    width:45px;
+}
+.pagination ul li.number{
+    height:45px;
+    width:45px;
+   
+}
+.pagination ul li.button-previous{
+    padding: 0 20px;
+    border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.button-next{
+    padding: 0 20px;
+    border-radius:  5px 25px 25px 5px ;
+}
+.pagination ul li.number-active,
+.pagination ul li.number:hover,
+.pagination ul li.button-previous:hover,
+.pagination ul li.button-next:hover{
+    color:white;
+    background-color: lightskyblue;
+}
